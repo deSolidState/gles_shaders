@@ -187,22 +187,22 @@ void main( void ) {
 			}
 			// Compound Analogous '96'a0similar to analogous but with negative hue shifts
 			else if (colorMode == 6.)	{
-				if (mod(index, 3.0) >= 1.0)	{
-					outColor.r = outColor.r + variation * index * 1.0 / float(numcolors - 1.);
+				if (mod(index, 3.) >= 1.)	{
+					outColor.r = outColor.r + variation * index * 1. / float(numcolors - 1.);
 				}
 				else	{
 					outColor.r = outColor.r - variation * index * 0.5 / float(numcolors - 1.);	
 				}
-				if (mod(index, 3.0) >= 1.0)	{
-					outColor.g = outColor.g - variation / 2.0;
-					if (outColor.g < 0.0)	{
+				if (mod(index, 3.) >= 1.)	{
+					outColor.g = outColor.g - variation / 2.;
+					if (outColor.g < 0.)	{
 						outColor.g = outColor.g + variation;
 					}
-					if (outColor.g > 1.0)	{
+					if (outColor.g > 1.)	{
 						outColor.g = outColor.g - floor(outColor.g);
 					}
 				}
-				if (mod(index, 4.0) >= 2.0)	{
+				if (mod( index, 4. ) >= 2. )	{
 					if (outColor.b < variation)	{
 						outColor.b = outColor.b + variation;
 					}				
