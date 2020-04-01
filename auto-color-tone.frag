@@ -18,10 +18,10 @@ uniform int itime;      // increases when ftime hits 1.0
 
 //f0:: numcolors - number of colors in tone
 //f1:: colormode - color mode displyed
-//f2::
+//f2:: slider for inputcolor variant 
 float f0 = floor(mix(1., 10., fparams[0]));
 float f1 = floor(mix(0., 6.0, fparams[1]));
-float f2 = mix(0.05, 0.95, fparams[2]);
+float f2 = mix(0.05, 5.95, fparams[2]);
 
 vec4 basecolor = vec4( 0.25, 0.59, 0.9, 1.0 );
 float numcolors = f0;
@@ -50,6 +50,9 @@ float gray(vec4 c)	{
 }
 
 void main( void ) {
+			// variant
+			// vec4 inputcolor = texture2D(tex, cos(sin(f2) / tcoord));
+
 			vec4 inputcolor = texture2D(tex, tcoord);
 			vec4 inColor = basecolor;
 			float index = floor(gray(inputcolor) * numcolors);	
