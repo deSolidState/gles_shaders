@@ -1,5 +1,5 @@
 // Creates a distorted waveform effect - from smooth to edgy
-// Original by INKA using the ISF format
+// Original: Sine Distortion by INKA (isakburstrom) using the ISF format
 // no licensing specified but they praise their contributions to open source
 // https://editor.isf.video/shaders/5e7a7ffe7c113618206de87c
 

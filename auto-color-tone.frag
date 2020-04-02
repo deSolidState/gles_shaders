@@ -1,5 +1,5 @@
 // Creates variations on a base color
-// original by VIDVOX using the ISF format: 
+// Original: Auto Color Tone by VIDVOX using the ISF format: 
 // no licensing specified but they praise their contributions to open source
 // https://editor.isf.video/shaders/5e7a7fe17c113618206de634
 
