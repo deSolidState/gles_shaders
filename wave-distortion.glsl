@@ -33,9 +33,9 @@ vec2 resolution = tres;
 float period = f0;
 float distortion = f1;
 float frequency = f2;
-float hpertfact = f3
+float hpertfact = f3;
 
-vec2 pb( vec2 uv, float percent){
+vec2 pb( vec2 uv, float percent) {
     uv.y += (period * PI) / percent;
     vec2 result = (cos(uv.y * percent)) * normalize(vec2(1., cos((uv.y) * percent)));
     return result;
