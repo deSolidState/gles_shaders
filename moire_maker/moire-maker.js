@@ -2,12 +2,12 @@
 // the html5 canvas
 
 function draw() {
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
+  var c = document.getElementById('myCanvas');
+  var ctx = c.getContext('2d');
   var time = new Date();
 
   ctx.save();
-  ctx.clearRect(0, 0, 300, 150); // clear canvas
+  ctx.clearRect(0, 0, 800, 600); // clear canvas
 
   ctx.rotate(
     ((2 * Math.PI) / 60) * time.getSeconds() +
