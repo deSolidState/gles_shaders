@@ -16,6 +16,7 @@ function draw() {
   ctx.fillRect(50, 20, 100, 50);
 
   ctx.restore();
+  // then
 
   window.requestAnimationFrame(draw);
 }
