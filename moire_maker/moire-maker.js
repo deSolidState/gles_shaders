@@ -45,6 +45,7 @@ function radiantLine(
   ctx.stroke();
 }
 
+// i have no idea what this really does.
 function scaleIntoRange(minActual, maxActual, minRange, maxRange, value) {
   var scaled =
     ((maxRange - minRange) * (value - minRange)) / (maxActual - minActual) +
