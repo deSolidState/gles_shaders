@@ -32,17 +32,6 @@ int texswitch = int(floor(f1));
 float brightness = f2;
 float moireness = f3;
 
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-// your dog ate my homework
-
 vec2 newcoords;
 vec2 oldcoords;
 vec4 srcPixel;
@@ -50,6 +39,7 @@ vec4 srcPixel;
 void main( void ) {
   vec2 uv = tres;
   
+  // if statements to pick the type of glitch i want
   if ( texswitch == 1 ) {
     oldcoords = uv;
     newcoords = tcoord;
@@ -66,6 +56,6 @@ void main( void ) {
   srcPixel = mod((( oldPixel + srcmod / newPixel ) + srcmod ), vec4(1.0));
   srcPixel *= 0.50  * brightness * 8.;
 
-  // i'm only using the X, which is the last render time we reset
+  // now sending the srcPixel rgb component
   gl_FragColor = vec4(srcPixel.rbg, 1.0);
 }
