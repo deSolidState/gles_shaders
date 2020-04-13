@@ -32,6 +32,17 @@ int texswitch = int(floor(f1));
 float brightness = f2;
 float moireness = f3;
 
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+// your dog ate my homework
+
 vec2 newcoords;
 vec2 oldcoords;
 vec4 srcPixel;
