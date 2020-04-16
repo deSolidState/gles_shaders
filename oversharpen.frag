@@ -1,4 +1,4 @@
-// Creates a rainbow glitchy - 3 types
+// oversharpens source video - artifacts are boxy lines to boxy color blobs
 // Licensing: open-source and licensed under the (CC BY-NC-SA) license.
 // For more info see https://github.com/deSolidState/gles_shaders
 
