@@ -1,4 +1,4 @@
-// Creates a rainbow glitchy - 3 types
+// Creates a rainbow glitchy output - 3 types
 // Licensing: open-source and licensed under the (CC BY-NC-SA) license.
 // For more info see https://github.com/deSolidState/gles_shaders
 
