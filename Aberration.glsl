@@ -14,9 +14,13 @@ uniform int itime;      // increases when ftime hits 1.0
 //f0:: barmult - barrel distortion vector multiplier
 //f1:: uvmult - uv resolution multiplier
 //f2:: maxdistmult - maximum distortion multiplier
-float f0 = mix(0., 20.75, fparams[0]);
-float f1 = mix(0.5, 10.0, fparams[1]);
-float f2 = mix(0., 5., fparams[2]);
+// float f0 = mix(0., 20.75, fparams[0]); // original
+// float f1 = mix(0.5, 10.0, fparams[1]); // original
+// float f2 = mix(0., 5., fparams[2]); // original
+
+float f0 = mix(0., 10.5, fparams[0]); // 04.17.20 edit
+float f1 = mix(0.5, 10.0, fparams[1]); // 04.17.20 edit
+float f2 = mix(0., 0.75, fparams[2]); // 04.17.20 edit
 
 float barmult = f0;
 float uvmult = f1;
@@ -54,11 +58,12 @@ vec4 spectrum_offset(float t) {
 }
 
 const float max_distort = 2.2;
-const int num_iter = 12;
+// const int num_iter = 12; // original
+const int num_iter = 2; // 04.17.20 edit
 const float reci_num_iter_f = 1.0 / float(num_iter);
 
 void main() {
-	vec2 uv=(gl_FragCoord.xy/resolution.xy*uvmult)+.25; // parameter here
+	vec2 uv=(gl_FragCoord.xy / resolution.xy * uvmult) + .25; // parameter here
 
 	vec4 sumcol = vec4(0.0);
 	vec4 sumw = vec4(0.0);
