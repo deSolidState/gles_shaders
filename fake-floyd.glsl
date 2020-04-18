@@ -42,11 +42,11 @@ float getGrayscale(vec2 coords){
 }
 
 void main()	{
-	vec4		fragColor = vec4(0.0);
-	vec2		fragCoord = gl_FragCoord.xy;
-	vec4		inputPixelColor = texture2D(tex, tcoord);
+	vec4	fragColor = vec4(0.0);
+	vec2	fragCoord = gl_FragCoord.xy;
+	vec4	inputPixelColor = texture2D(tex, tcoord);
 
-	int topGapY = int(tres.y - fragCoord.y);
+	int	topGapY = int(tres.y - fragCoord.y);
 
 	int cornerGapX = int((fragCoord.x < 10.0) ? fragCoord.x : tres.x - fragCoord.x);
 	int cornerGapY = int((fragCoord.y < 10.0) ? fragCoord.y : tres.y - fragCoord.y);

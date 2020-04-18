@@ -32,34 +32,34 @@ float steps = f0;
 int typeswitch = int(floor(f1));
 
 void main( void ) {
-    vec3 color;
-    vec2 uv;
+  vec3 color;
+  vec2 uv;
 
-    // typeswitch == 1 square pixels
-    // typeswitch == 2 round pixels
-    if (typeswitch == 1) {
-        uv = ceil(tcoord * vec2(steps)) / vec2(steps);
-        color = texture2D(tex, uv).rgb;
-    } else if (typeswitch == 2) {
-        uv = tcoord;
+  // typeswitch == 1 square pixels
+  // typeswitch == 2 round pixels
+  if (typeswitch == 1) {
+    uv = ceil(tcoord * vec2(steps)) / vec2(steps);
+    color = texture2D(tex, uv).rgb;
+  } else if (typeswitch == 2) {
+    uv = tcoord;
 
-        uv *= steps / 2.;
-        uv *= aspect_ratio;
-        uv += 0.5;
+    uv *= steps / 2.;
+    uv *= aspect_ratio;
+    uv += 0.5;
 
-        vec2 fraction = fract(uv);
-        
-        uv = floor(uv);
-        uv /= aspect_ratio;
-        uv /= steps / 2.;
-        
-        color = texture2D(tex, uv).rgb;
-        float distance = length(vec2(0.5-fraction.x,0.5-fraction.y));
-        
-        // Output to screen
-        color = color * (1.0-smoothstep(0.45,0.50,distance));
-    }
+    vec2 fraction = fract(uv);
+    
+    uv = floor(uv);
+    uv /= aspect_ratio;
+    uv /= steps / 2.;
+    
+    color = texture2D(tex, uv).rgb;
+    float distance = length(vec2(0.5-fraction.x,0.5-fraction.y));
+    
+    // Output to screen
+    color = color * (1.0-smoothstep(0.45,0.50,distance));
+  }
 
-    gl_FragColor = vec4(color, 1.0);
+  gl_FragColor = vec4(color, 1.0);
 
-}              
+} 
