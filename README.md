@@ -9,6 +9,11 @@ Many of these are converted/hacked from Shadertoy
 Many of these are converted/hacked ISF shaders  
 
 ## SHAMELESS ASK FOR SUPPORT!!!
+
+*Buy me a cup of coffee or a bag of chips!*
+Making these is truly a labor of love, but it does take time./
+If you can afford it throw me a bit of pocket change, it will motivate to make more!/
+Thanks for your support regardless!
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YWWB64AG2DSYW)
 
 
