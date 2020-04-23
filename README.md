@@ -8,6 +8,9 @@ Some of the shaders I created myself
 Many of these are converted/hacked from Shadertoy  
 Many of these are converted/hacked ISF shaders  
 
+## SHAMELESS ASK FOR SUPPORT!!!
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YWWB64AG2DSYW)
+
 
 ## LICENSING
 To be explicit, unless expressly stated otherwise the shaders converted/hacked from ISF (Interactive Shader Format) and Shadertoy are open-source.
