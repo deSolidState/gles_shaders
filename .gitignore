@@ -2,3 +2,9 @@
 gifs
 testure.png
 bloooooom.glsl
+
+.prettierrc
+.prettierignore
+.gitignore
+
+default.vert
